@@ -1,0 +1,47 @@
+/* AddUser.css */
+.add-user-container {
+    max-width: 400px;
+    margin: 60px auto;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    
+    background: #fff;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+  
+  .add-user-form input,
+  .add-user-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    display: block;
+    position: relative;
+    font-size: 16px;
+    
+  }
+  .add-user-form {
+    
+    margin-right: 26px;
+  }
+  
+  .add-user-form button {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .add-user-form button:hover {
+    background: #0056b3;
+  }
+  

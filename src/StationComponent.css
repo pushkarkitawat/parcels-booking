@@ -1,0 +1,46 @@
+.station-form-container {
+    max-width: 500px;
+    margin: 20px auto;
+    top: 100px;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+  }
+  
+  .station-form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+    margin-bottom: 10px ;
+    padding-bottom: 10px;
+  }
+  .station-form{
+    margin-right:20px ;
+    padding: 10px;
+  }
+  
+  .station-form input,
+  .station-form textarea,
+  .station-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .station-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

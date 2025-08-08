@@ -1,0 +1,71 @@
+.reset-password-container {
+    width: 100%;
+   
+   height: 100vh;
+   
+    
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  .reset-section{
+    width:400px;
+    justify-self: center;
+    position: relative;
+    border-radius: 10px;
+    color: #000000;
+    padding: 30px;
+    background-color: rgb(180, 180, 180);
+    top: 100px;
+  }
+  .pass{
+    max-width: 250px;
+    display: flex;
+    outline: none;
+    border: none;
+    margin: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px #868686;
+  }
+  .labpass{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .reset-password-container form div {
+    margin-bottom: 1rem;
+  }
+  
+  .reset-password-container input {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  
+  .success {
+    color: green;
+  }
+  
+  .error {
+    color: rgb(246, 58, 58);
+    font-weight: 700;
+    font-size: large;
+  }
+  .reset{
+    width: 100px;
+    height: 35px;
+    padding: 5px;
+   left: 300px;
+    position: relative;
+    border: none;
+    background-color: rgb(50, 117, 225);
+    box-shadow: 0px 1px 10px #848484;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 10px;
+  }
+  .reset:hover{
+    background-color:rgb(37, 96, 192) ;
+  }
+  

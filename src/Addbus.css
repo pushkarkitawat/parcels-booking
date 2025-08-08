@@ -1,0 +1,55 @@
+.add-bus-container {
+    max-width: 500px;
+    position: relative;
+    margin: 150px auto;
+
+    
+    
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    background: #fff;
+  }
+  
+  .bus-form {
+    display: flex;
+   
+    flex-direction: column;
+    gap: 12px;
+  }
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+  }
+  
+  .bus-form input,
+  .bus-form select {
+    padding: 10px;
+    width: 95%;
+    position: relative;
+    display: block;
+   
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+  }
+  
+  .bus-form button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .bus-form button:hover {
+    background-color: #066ad6;
+  }
+  .back{
+    position: relative;
+    justify-self: left;
+  }
+  

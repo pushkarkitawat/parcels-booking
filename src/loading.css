@@ -1,0 +1,325 @@
+.dispatch-container {
+  position: relative;
+    padding: 20px;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+
+    
+  }
+  .dispatch-container2 {
+    position: relative;
+      padding: 20px;
+      height: 100vh;
+      font-family: 'Inter', sans-serif;
+     opacity: 0.2;
+  
+      
+    }
+  select{
+    box-shadow: 0px 1px 10px #959595;
+  }
+  .booking-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color: #0f1e3d;
+    font-weight: 600;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    border-left: 5px solid #007BFF;
+   
+    padding-left: 15px;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .custom-select {
+    appearance: none; /* Remove default arrow (for most browsers) */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px 40px 8px 12px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    color: #333;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    cursor: pointer;
+    transition: border 0.2s ease;
+    width: 200px;
+  }
+  
+  .custom-select:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  /* Arrow styling */
+  .arrow-icon {
+    font-size: 22px;
+    color: #007BFF;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Optional: Rotate arrow on hover */
+  .booking-container h2:hover .arrow-icon {
+    transform: translateX(5px);
+  }
+  .option-bar{
+    position: relative;
+    top: 30px;
+    left: -30px;
+  }
+  .dispatch-box{
+    position: relative;
+    box-shadow: 0px 1px 20px #989898;
+    top: 150px;
+    width: 1000px;
+    background-color: #f1f1f1;
+    height: 100px;
+    justify-self:center ;
+    align-self: center;
+    justify-items: left;
+    padding: 50px;
+    border-radius: 10px;
+    gap: 100px;
+    
+    display:block;
+  }
+  .dispatch-box h2{
+    position: relative;
+    top: -30px;
+    left: -35px;
+  }
+  .active-dispatch {
+    background-color: rgba(160, 153, 153, 0.238);
+    z-index: 400;
+  }
+  
+  .dispatchedbox {
+    background-color: rgb(131, 130, 130);
+    border: 1px solid #d5d5d5;
+    border-radius: 12px;
+    z-index: 200;
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+    top: 100px;
+    padding: 44px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(47, 47, 47, 0.313);
+    max-width: 600px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .dispatchedbox h2 {
+    margin-bottom: 16px;
+    
+   
+    color: #ebe9e9;
+    font-size: 22px;
+    position: relative;
+    top: -50px;
+    left: 0px;
+    font-weight: 700;
+  }
+  .blurred {
+    filter: blur(4px);
+    pointer-events: none; /* Prevent clicks */
+    user-select: none;
+    transition: filter 0.3s ease;
+  }
+  .dispatchedbox label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-weight: 700;
+    font-size: 16px;
+    color: #e2e1e1;
+  }
+  
+  .dispatchedbox select {
+    margin-top: 6px;
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .dispatchedbox ul {
+    margin-top: 8px;
+    padding-left: 20px;
+    font-size: 14px;
+    list-style-type: disc;
+    color: #222;
+  }
+  
+  .dispatchedbox li {
+    margin-bottom: 4px;
+  }
+  
+  .dispatchedbox button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .dispatchedbox button:hover {
+    background-color: #0056b3;
+  }
+  
+  .dispatchedbox button:disabled {
+    background-color: #827f7f;
+    cursor: not-allowed;
+  }
+  #close-btn {
+    position: relative;
+    display: block;
+    justify-self: right;
+    margin-top: -10px;
+    top: 2px;
+    right: 6px;
+    background-color:white;
+    border: none;
+    font-size: 34px;
+    cursor: pointer;
+    color: #555;
+    font-weight: bold;
+    line-height: 1;
+  }
+  
+  #close-btn:hover {
+    color: white;
+    background-color: #d00;
+    
+  }
+  
+  
+  .dispatch-filters {
+    display: flex;
+    gap: 10px;
+   
+    margin-bottom: 15px;
+  }
+  
+  .dispatch-box select {
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-right: 100px;
+    width: 200px;
+  }
+  
+  .dispatch-box button,.ADDdispatch ,.closedispatch {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px ;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 100px;
+    border-radius: 4px;
+    
+  }
+  .ADDdispatch ,.closedispatch {
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    font-size: 16px ;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    justify-content: center;
+    justify-self: right;
+  }
+  .ADDdispatch:hover,.dispatch-box button:hover{
+    background-color: #1f9123;
+    box-shadow: 1px 1px 10px #adadad;
+  }
+  .dispatching-box{
+    border: 1px solid #ddd;
+    padding: 20px;
+    height: auto;
+    display: block;
+    width: 1050px;
+    border-radius: 5px;
+    justify-self: center;
+    position: relative;
+    top: 180px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 20px #d2d2d2;
+
+  }
+  .dispatch-table {
+    width: 100%;
+    box-shadow: 0px 1px 20px #d1d1d1;
+    
+    border-collapse: collapse;
+  border-spacing: 5;
+  }
+  
+  .dispatch-table th, .dispatch-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.5px ;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+  }
+  .dispatch-table td{
+    color: #081734;
+  
+  }
+  .closedispatch{
+    background-color: rgba(255, 0, 0, 0.706);
+    display: block;
+    
+    margin-top: -10px;
+   top: 50px;
+   left: -140px;
+  }
+  
+  .dispatch-table th {
+    background-color: #4395f3c9;
+  }
+ 
+ 
+  
+  .no-result {
+    padding: 8px;
+    color: gray;
+  }
+  
+  .dispatch-filters {
+    margin-bottom: 20px;
+  }
+  
+  .dispatch-sheet {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f3f3f3;
+    border-radius: 6px;
+    width: fit-content;
+  }
+  

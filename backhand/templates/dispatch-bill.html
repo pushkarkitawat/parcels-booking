@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dispatch Bill</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      border: 2px solid #000;
+    }
+    h2 {
+      text-align: center;
+    }
+    .details {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    .details p {
+      margin: 5px 0;
+    }
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    .table th, .table td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: center;
+    }
+    .footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 12px;
+    }
+    .logo-top {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 100px;
+      opacity: 0.3;
+    }
+    .background-logo {
+      position: fixed;
+      top: 30%;
+      left: 30%;
+      opacity: 0.08;
+      width: 300px;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Dispatch Bill</h2>
+
+  <div class="details">
+    <p><strong>Bus Number:</strong> {{busNo}}</p>
+    <p><strong>Dispatched By:</strong> {{dispatchedBy}}</p>
+    <p><strong>Date:</strong> {{date}}</p>
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Sr No</th>
+        <th>Lr No</th>
+        <th>To</th>
+        <th>Articles</th>
+        <th>AMT</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each bookingIds}}
+        <tr>
+          <td>{{inc @index}}</td>
+          <td>{{lrNo}}</td>
+          <td>{{toStation}}</td>
+          <td>
+            {{#if parcels.length}}
+              {{#each parcels}}
+                {{noOfParcels}}<br/>
+              {{/each}}
+            {{else}}
+              0
+            {{/if}}
+          </td>
+          <td>
+            {{#if parcels.length}}
+              {{#each parcels}}
+                {{total}}<br/>
+              {{/each}}
+            {{else}}
+              0
+            {{/if}}
+          </td>
+        </tr>
+      {{/each}}
+      <tr>
+        <td colspan="4"><strong>Total</strong></td>
+        <td><strong>{{totalAmount}}</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    This is a system generated dispatch bill. Please verify all bookings before departure.
+  </div>
+</body>
+</html>

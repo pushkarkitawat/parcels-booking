@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parcel Bill - Shree Sathguru Tours and Travels-{{lrNo}}</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #fff;
+      color: #000;
+    }
+    .bill-container {
+      border: 1px solid #333;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #aaa;
+      padding-bottom: 10px;
+    }
+    .header img {
+      height: 60px;
+    }
+    .header .company-info {
+      text-align: right;
+    }
+    h2 {
+      margin: 10px 0;
+      text-align: center;
+    }
+    .section {
+      margin-top: 20px;
+    }
+    .section h4 {
+      margin-bottom: 8px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .info-table, .parcel-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .info-table td, .parcel-table th, .parcel-table td {
+      border: 1px solid #aaa;
+      padding: 8px;
+    }
+    .parcel-table th {
+      background-color: #f0f0f0;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="bill-container">
+    <div class="header">
+      <img src="sslogo.png" alt="Shree Sathguru Logo" />
+      <div class="company-info">
+        <strong>Shree Sathguru Tours and Travels</strong><br/>
+        Mira Road East, Thane, Maharashtra - 401107<br/>
+        Mobile: 9004230913<br/>
+        GSTIN: 27ABCDE1234F1Z5
+      </div>
+    </div>
+
+    <h2>Parcel Booking Bill</h2>
+
+    <div class="section">
+      <h4>Booking Info</h4>
+      <table class="info-table">
+        <tr><td><strong>LR No:</strong></td><td>{{lrNo}}</td><td><strong>Booking ID:</strong></td><td>BK-9823</td></tr>
+        <tr><td><strong>From:</strong></td><td>Mumbai</td><td><strong>To:</strong></td><td>Jaipur</td></tr>
+        <tr><td><strong>Status:</strong></td><td>PAID</td><td><strong>Total Weight:</strong></td><td>85 Kg</td></tr>
+        <tr><td><strong>Type:</strong></td><td>Parcel</td><td><strong>Article Type:</strong></td><td>Box</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h4>Sender Details</h4>
+      <table class="info-table">
+        <tr><td><strong>Name:</strong></td><td>Ravi Mehta</td></tr>
+        <tr><td><strong>Phone:</strong></td><td>9876543210</td></tr>
+        <tr><td><strong>GST No:</strong></td><td>27RAVIME1234A1ZP</td></tr>
+        <tr><td><strong>Address:</strong></td><td>Andheri West, Mumbai</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h4>Receiver Details</h4>
+      <table class="info-table">
+        <tr><td><strong>Name:</strong></td><td>Seema Khandelwal</td></tr>
+        <tr><td><strong>Phone:</strong></td><td>9988776655</td></tr>
+        <tr><td><strong>GST No:</strong></td><td>08SEEMAK1234C1Z2</td></tr>
+        <tr><td><strong>Address:</strong></td><td>Vaishali Nagar, Jaipur</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h4>Parcel Details</h4>
+      <table class="parcel-table">
+        <thead>
+          <tr>
+            <th>No. of Parcels</th>
+            <th>Parcel Type</th>
+            <th>Content</th>
+            <th>Amount/Box</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>3</td>
+            <td>Cardboard</td>
+            <td>Clothes & Utensils</td>
+            <td>₹150</td>
+            <td>₹450</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section" style="text-align:right; font-size:1.2em;">
+      <strong>Grand Total: ₹450</strong>
+    </div>
+
+    <div class="footer">
+      Thank you for choosing Shree Sathguru Tours and Travels. Have a safe journey!<br/>
+      This is a system-generated bill.
+    </div>
+  </div>
+</body>
+</html>

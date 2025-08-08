@@ -1,0 +1,423 @@
+.booking-container{
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    justify-items: center;
+    margin-top: 20px;
+
+    overflow-y: scroll;
+    font-family: 'Inter', sans-serif;
+    background-color:whitesmoke;
+
+}
+.booking-container h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: #0f1e3d; /* Deep navy blue for professional tone */
+  font-weight: 600;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  border-left: 4px solid #041b34; 
+  border-right: 4px solid #041b34;/* Accent border */
+  padding-left: 15px;
+  padding-right: 15px;
+  letter-spacing: 0.5px;
+  justify-self: left;
+  position: relative;
+  top: -30px;
+}
+.dispatch-container h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color: #0f1e3d;
+  font-weight: 600;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  border-left: 5px solid #007BFF;
+  padding-left: 15px;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Arrow styling */
+.arrow-icon {
+  font-size: 22px;
+  color: #007BFF;
+  transition: transform 0.3s ease;
+}
+
+/* Optional: Rotate arrow on hover */
+.dispatch-container h2:hover .arrow-icon {
+  transform: translateX(5px);
+  cursor:move;
+}
+
+
+.booking-form{
+    width: 100vw;
+    height: 100vh;
+    margin-left: 100px;
+
+}
+/* Chrome, Safari, Edge, Opera */
+.booking-form input[type=number]::-webkit-outer-spin-button,
+.booking-form input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.booking-form input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.booking-form input{
+  box-shadow: 0px 1px 5px #ddd;
+  font-weight: 500;
+  text-transform: uppercase;
+  outline: none;
+  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif;
+  
+}
+.form-section1{
+    top: 50px;
+    display: flex;
+    position: relative;
+    width: 500px;
+    gap: 50px;
+    max-height: 100px;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 50px;
+    align-items: center;
+    box-shadow: 0px 1px 10px #ddd;
+}
+.booking-form textarea {
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  height: 50px; /* Make it tall enough to show text */
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif; /* Or your preferred font */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; /* User can resize vertically */
+  box-sizing: border-box;
+  overflow-y: scroll;
+  outline: none;
+  letter-spacing: 2;
+  text-transform: uppercase;
+  box-shadow: 0px 1px 10px #ddd;
+}
+
+.form-section1 h3{
+    position: absolute;
+    text-align: left;
+    top: -50px;
+    left: 30px;
+}
+.form-section1 input{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    width: 150px;
+    height: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 5px;
+    font-size: 16px;
+    left: 10px;
+    
+
+}.form-section1 p{
+    position: relative;
+   left: 10px;
+   font-weight: bold;
+   letter-spacing: 1px;
+}
+.form-section2 {
+    top: 50px;
+    display: grid;
+    position: relative;
+    width: 500px;
+    height: auto;
+    grid-template-columns: repeat(2, 2fr); /* Two equal columns */
+    grid-gap: 20px  10px;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom:100px;
+    box-shadow: 0px 1px 10px #ddd;
+    align-items: start;
+  
+  }
+  .form-section2:nth-child(2){
+    margin-left: -250px;
+    
+  }
+  .form-section4 {
+    justify-self: right;
+
+    display: grid;
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    grid-template-columns: repeat(1, 1fr); /* Two equal columns */
+    grid-gap: 20px ;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 10px;
+    padding: 20px;
+    top: 300px;
+    right: 100px;
+    align-items: start;
+    box-shadow: 0px 1px 10px #ddd;
+  
+  }
+  .form-section4 input{
+    position: relative;
+    height: 20px;
+    border-radius: 5px;
+    width: 120px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-family: 'Inter', sans-serif;
+
+  }
+  .form-section4 h3{
+    position: relative;
+    top:10px;
+
+  }
+  
+  .form-section2 h3 {
+    position: absolute;
+    text-align: left;
+    top: -50px;
+    left: 30px;
+  }
+  .form-section2:nth-child(4){
+    top: -10px;
+   
+    border: none;
+  }
+  /* Full width input or textarea for address and GST */
+  .form-section2 input,
+  .form-section2 textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+   
+    width: 200px;
+    box-sizing: border-box;
+  }
+  .form-section2 input:nth-child(3){
+    position: relative;
+    left: -100px;
+  }
+  .form-section2 input:nth-child(2){
+    width: 250px;
+  }
+  
+  .form-section2 input:nth-child(4){
+    width: 400px;
+  }
+  
+  /* Make certain inputs span both columns */
+  .sender-gst,
+  .sender-address {
+    grid-column: span 2;
+  }
+  .details{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    row-gap: 8px;
+    
+  }
+  .form-section3{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 1000px;
+    height: 50px;
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid rgb(165, 165, 165);
+    grid-gap: 20px 30px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    
+  }
+  .form-section3 h3{
+    position:absolute;
+    top: 540px;
+    left: 78px;
+  }
+  .form-section3 input{
+    width: 150px;
+    border-radius: 5px;
+    height: 30px;
+    width: 130px;
+    border: none;
+    padding: 5px;
+  }
+  .form-section3 button{
+    background-color: #ea0b0bda;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 100px;
+    height: 38px;
+    padding: 10px;
+  }
+  .form-section3 button:hover{
+    background-color: rgba(255, 0, 0, 0.85);
+    box-shadow: 0px 1px 10px #a6a5a5;
+  }
+  
+
+  .parcel-table {
+    position: relative;
+  
+    width: 100%;
+    border-collapse: collapse;
+    
+    margin-top: 60px;
+  }
+  
+  .parcel-table th,
+  .parcel-table td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: left;
+  }
+  
+  .parcel-table th {
+    background-color: #f5f5f5;
+    
+  }
+  .parcel-list{
+    position: relative;
+    top: -100px;
+
+  }
+  .form-footer {
+    display: flex;
+    justify-content: left;
+    position: relative; /* Aligns button to the right */
+    top: -50px;
+    padding: 10px 0;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .form-footer button[type="submit"] {
+    background-color: #007bff; /* Bootstrap blue */
+    color: #fff;
+    border: none;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 8px;
+    height: 30px;
+    
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-footer button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .form-footer button[type="submit"]:disabled {
+    background-color: #b0c4de;
+    cursor: not-allowed;
+  }
+  .custom-dropdown-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .dropdown-list,.dropdown-list2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 200px;
+    z-index: 100;
+    background-color: white;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    list-style: none;
+    border-radius: 4px;
+    max-height: 68px;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+  }
+  .dropdown-list2{
+    left: 300px;
+  }
+  .dropdown-list::-webkit-scrollbar,.dropdown-list2::-webkit-scrollbar{
+    display: none;
+  }
+  .dropdown-list li ,.dropdown-list2 li{
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+
+  .form-section3 select{
+    width:130px;
+    height: 38px;
+    outline: none;
+    box-shadow: 0px 1px 10px #ddd;
+    border-radius: 5px;
+    margin-top: 2px;
+    border: 1px solid #dddd;
+    
+    font-family: 'Inter', sans-serif;
+    
+  }
+  .form-section5{
+    width: 500px;
+    position: relative;
+    margin-bottom: 100px;
+   
+    top: 50px;
+    border-radius: 10px;
+    
+  }
+  
+  .form-section5 table{
+border-radius: 10px;
+  }
+  .dropdown-list li:hover ,.dropdown-list2 li:hover{
+    background-color: #f0f0f0;
+  }
+  .logout{
+    position: relative;
+    justify-self: right;
+    margin-right: 50px;
+    top: 30px;
+  }
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+

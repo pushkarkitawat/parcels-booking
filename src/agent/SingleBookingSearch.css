@@ -1,0 +1,54 @@
+
+.option{
+  position: relative;
+  left: -10px;
+  top: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  margin-left: 50px;
+  flex-wrap: wrap;
+}
+
+.print-btn,
+.delivered-btn,
+.cancel-btn {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Print button - Blue */
+.print-btn {
+  background-color: #2563eb; /* blue-600 */
+}
+
+.print-btn:hover {
+  background-color: #1e40af; /* blue-800 */
+}
+
+/* Delivered button - Green */
+.delivered-btn {
+  background-color: #059669; /* emerald-500 */
+}
+
+.delivered-btn:hover {
+  background-color: #047857; /* emerald-700 */
+}
+
+/* Cancel button - Red */
+.cancel-btn {
+  background-color: #dc2626; /* red-600 */
+}
+
+.cancel-btn:hover {
+  background-color: #991b1b; /* red-800 */
+}

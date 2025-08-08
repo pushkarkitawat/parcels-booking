@@ -1,0 +1,164 @@
+.option-navbar {
+    background-color: #e5e5e5;
+    width: 100vw;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    
+    
+  }
+  .nav{
+    background-color:#858585;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    margin-left: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 1px 10px #626262;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+  }
+  .nav2{
+    margin-left: 100px;
+    left: -230px;
+    align-content: center;
+    position: relative;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .nav-list1 {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 50px;
+    outline: none;
+  }
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 6px 10px;
+    transition: background-color 0.2s;
+  }
+  
+  .nav-link:hover {
+  color: #2e3032;
+  
+  font-weight: 700;
+    border-radius: 4px;
+    
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #6a6e73;
+    margin-top: 5px;
+    list-style: none;
+    padding: 0;
+    
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  
+  .dropdown-link {
+    color: white;
+    padding: 10px 16px;
+    display: block;
+   
+    text-decoration: none;
+  }
+  
+  .dropdown-link:hover {
+    background-color: #1d2024;
+    font-weight: 700px;
+  }
+  
+  .nav-item.dropdown {
+    position: relative;
+  }
+  
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Button styles */
+  .status-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .status-btn.paid {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: rgb(9, 134, 55);
+  }
+  
+  .status-btn.topay {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: rgb(237, 61, 41);
+    
+  }
+  
+  .status-btn.foc {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #3b82f6;
+  }
+  .status-btn.foc:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.292);
+    background-color: #2e67c2;
+  }
+  .status-btn.paid:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.292);
+    background-color: rgb(64, 149, 25)
+  }
+  .status-btn.topay:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.292);
+    background-color: #c22e2e;
+  }
+  /* Search box */
+  .search-box {
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: none;
+    position: relative;
+   
+   top: 5px;
+   width: 100%;
+   margin-bottom: 5px;
+   margin-right: 100px;
+   max-width: 200px;
+   height: 25px;
+    font-size: 14px;
+    outline: none;
+  }
+  

@@ -1,0 +1,120 @@
+/* StationList.css */
+
+.station-container {
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    font-family: system-ui, "Segoe UI", sans-serif;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: scroll;
+    margin-top: 10px;
+  }
+  .station-header{
+    top: 10px;
+    position: relative;
+    justify-content: right;
+    display: flex;
+  }
+  .stationheading{
+    position: relative;
+    margin-top: 10px;
+  }
+  .station-search-input {
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 16px;
+    background-color: #f9fafb;
+    color: #111827;
+    outline: none;
+  }
+  
+  .station-table {
+    width: 100%;
+    padding: 20px;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-top: 16px;
+    border-radius: 10px;
+    border: 1px solid black;
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+  
+  .station-th {
+    background-color: #f9fafb;
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 15px;
+    color: #1f2937;
+    border-bottom: 2px solid #e5e7eb;
+  }
+  
+  .status-badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-block;
+  }
+  
+  .status-badge.active {
+    background-color: #d1fae5;
+    color: #065f46;
+  }
+  
+  .status-badge.inactive {
+    background-color: #fee2e2;
+    color: #991b1b;
+  }
+  
+  .station-td {
+    background-color: #fff;
+    padding: 14px 16px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #374151;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  .status-select {
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .status-select.active {
+    background-color: #d4f4d2;
+    border: 1px solid green;
+  }
+  
+  .status-select.inactive {
+    background-color: #fbdcdc;
+    border: 1px solid red;
+  }
+  
+  .status-select.maintenance {
+    background-color: #fff3cd;
+    border: 1px solid #ffc107;
+  }
+  
+  .status-badge.active {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .status-badge.inactive {
+    color: red;
+    font-weight: bold;
+  }
+  
+ 
+  

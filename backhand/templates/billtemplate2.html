@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parcel Bill - Shree Sathguru</title>
+  <style>
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+      }
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fdfdfd;
+      padding: 40px;
+      background-image: url('logo.png'); /* Replace with your logo image */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 300px;
+      opacity: 0.95;
+    }
+
+    .bill {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      position: relative;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      width: 130px;
+      margin: 0 auto 10px;
+      display: block;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 10px 0 20px;
+    }
+
+    .company-info {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .info-section table,
+    .parcel-section table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 16px;
+    }
+
+    .info-section td,
+    .parcel-section th,
+    .parcel-section td {
+      padding: 8px 10px;
+      border: 1px solid #ccc;
+      vertical-align: top;
+    }
+
+    .parcel-section th {
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+
+    .parcel-section td {
+      text-align: center;
+    }
+
+    .terms {
+      margin-top: 30px;
+      font-size: 16px;
+      border-top: 1px dashed #999;
+      padding-top: 10px;
+      color: #444;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bill">
+    <h2>Shree Sathguru Tours and Travels</h2>
+    <div class="company-info">
+      Address: 123, Guru Complex, Mira Road East, Mumbai, Maharashtra – 401107<br/>
+      Mobile: +91 90042 30913
+    </div>
+
+    <div class="info-section">
+      <table>
+        <tr>
+          <td><strong>LR No:</strong> {{lrNo}}</td>
+          <td><strong>Status:</strong> Booked<br/>AT: {{date}}</td>
+          <td><strong>Type:</strong> {{type}}</td>
+        </tr>
+        <tr>
+          <td><strong>From:</strong> {{fromStation}}</td>
+          <td colspan="2"><strong>To:</strong> {{toStation}}</td>
+        </tr>
+        <tr>
+          <td><strong>Sender Name:</strong> {{senderName}}</td>
+          <td><strong>Receiver Name:</strong> {{receiverName}}</td>
+          <td><strong>Receiver No:</strong> {{receiverPhone}}</td>
+        </tr>
+        <tr>
+          <td><strong>Sender GST:</strong> {{senderGST}}</td>
+          <td colspan="2"><strong>Receiver GST:</strong> {{receiverGST}}</td>
+        </tr>
+        <tr>
+          <td colspan="3" style="height: auto; padding: 10px; vertical-align: top; min-height:10px">
+            <strong>Delivery Details:</strong><br/>
+            {{deliveryAddress}}<br/>
+            <strong>Contact No:</strong> {{deliveryMobile}}
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="parcel-section" style="margin-top:15px">
+      <table>
+        <thead>
+          <tr>
+            <th>No. of Parcels</th>
+            <th>Parcel Type</th>
+            <th>Content</th>
+            <th>Amount/Box</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each parcels}}
+          <tr>
+            <td>{{noOfParcels}}</td>
+            <td>{{parcelType}}</td>
+            <td>{{content}}</td>
+            <td>{{amtPerBox}}</td>
+            <td>{{total}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="terms">
+      <strong>Terms & Conditions:</strong><br/>
+      1. Goods are transported at owner's risk.<br/>
+      2. Claims for damage or loss must be made within 24 hours of delivery.<br/>
+      3. No illegal or hazardous items accepted for transport.<br/>
+      4. Good value is not more than ₹2000.<br/>
+      5. Delivery schedule may vary due to unforeseen circumstances.
+    </div>
+
+    <div class="footer">
+      Thank you for choosing Shree Sathguru Tours and Travels.
+    </div>
+  </div>
+</body>
+</html>

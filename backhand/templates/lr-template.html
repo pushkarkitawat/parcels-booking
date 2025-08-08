@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LR Invoice</title>
+  <style>
+    body { font-family: Arial; font-size: 12px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    td, th { border: 1px solid #000; padding: 6px; }
+    .header { text-align: center; font-weight: bold; font-size: 18px; }
+    .right { text-align: right; }
+  </style>
+</head>
+<body>
+  <div class="header">AAA TRANSPORT COMPANY</div>
+  <p>LR No: {{lrNo}}</p>
+  <p>From: {{from}} → To: {{to}}</p>
+  <p>Date: {{date}}</p>
+  <p>Vehicle No: {{vehicleNo}} | Driver Phone: {{driverPhone}}</p>
+
+  <h4>Sender</h4>
+  <p>{{senderName}} - {{senderPhone}}</p>
+  <p>Address: {{senderAddress}} | GST: {{senderGST}}</p>
+
+  <h4>Receiver</h4>
+  <p>{{receiverName}} - {{receiverPhone}}</p>
+  <p>Address: {{receiverAddress}} | GST: {{receiverGST}}</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Parcel Type</th>
+        <th>Article</th>
+        <th>Qty</th>
+        <th>Content</th>
+        <th>Rate</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each parcels}}
+      <tr>
+        <td>{{@index}}</td>
+        <td>{{parcelType}}</td>
+        <td>{{articleType}}</td>
+        <td>{{noOfParcels}}</td>
+        <td>{{content}}</td>
+        <td>{{amtPerBox}}</td>
+        <td>{{total}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  <p class="right"><strong>Total Amount: ₹{{totalAmount}}</strong></p>
+  <p class="right">Advance: ₹{{advance}}</p>
+</body>
+</html>
