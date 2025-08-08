@@ -13,6 +13,14 @@ const resetroute = require('./routes/reset');
 // Middleware
 app.use(cors());
 app.use(express.json());
+const morgan = require('morgan');
+app.use(morgan('tiny'));
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ message: 'Something went wrong!' });
+});
+const helmet = require('helmet');
+app.use(helmet());
 
 // Routes
 app.use('/api/admin', adminRoutes);

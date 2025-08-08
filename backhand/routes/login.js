@@ -17,7 +17,7 @@ router.post('/login', async (req, res) => {
       const match = await bcrypt.compare(password, user.password);
       if (!match) return res.status(401).json({ message: 'Incorrect password' });
   
-      const token = jwt.sign({ id: user.id, name: user.name }, process.env.JWT_SECRET, { expiresIn: '1d' });
+      const token = jwt.sign({ id: user.id, name: user.name }, process.env.JWT_SECRET, { expiresIn: '15min' });
       res.json({ token, user });
     } catch (err) {
       console.error('Login error:', err);
